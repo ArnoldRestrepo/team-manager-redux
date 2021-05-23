@@ -1,5 +1,21 @@
-export default function Players (){
+import { useSelector, useDispatch } from "react-redux";
+
+export default function Players() {
+  const players = useSelector(state => state.players)
+  console.log(players);
   return(
-    <p>Players</p>
+    <section>
+      <h2>Players</h2>
+      <article className="PlayersContainer">
+        <div>
+          <img src="" alt="" />
+          <h3>Player:</h3>
+          <div>
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+      </article>
+    </section>
   )
 }
